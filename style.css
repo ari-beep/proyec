@@ -1,0 +1,272 @@
+* {
+ font-family: "Poppins", sans-serif;}
+
+header {
+    background-color: #fff0dd;
+    padding: 100px 100px;
+    text-align: center;
+    border-bottom: 5px solid #b89685;
+    margin-top: 60px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #322a2a;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header hr {
+    width: 80px;
+    height: 4px;
+    background-color: #ffba9f;
+    border: none;
+    margin: 20px auto 0 auto;
+    border-radius: 2px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #322a2a;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #b89685;
+}
+
+
+.miBanner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 5;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff0dd;
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
+    z-index: 10;
+    margin: 0;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Puntitos */
+.dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: rgba(255,255,255,1);
+}
+
+.mision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff0dd;
+    padding: 60px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.mision h2 {
+    font-size: 36px;
+    color: #b89685;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.mision p {
+    max-width: 500px;
+    color: #322a2a;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b89685;
+    padding: 60px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.productos h3 {
+    font-size: 36px;
+    color: #fff0dd;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.productos p {
+    max-width: 500px;
+    color: #322a2a;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.productos button{
+  background-color: #fff0dd;
+  border: none;
+  padding: 30px 40px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.productos button:hover{
+    background-color: #ffba9f;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.item-galeria {
+    flex: 1 1 150px; 
+    max-width: 200px;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffba9f;
+    padding: 70px 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.ubicacion h3 {
+    font-size: 36px;
+    color: #a78372;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.ubicacion p {
+    max-width: 500px;
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #ffba9f;
+    padding: 50px 10px;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #b89685;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}

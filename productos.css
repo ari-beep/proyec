@@ -1,0 +1,134 @@
+*{
+     font-family: "Poppins", sans-serif;
+    }
+
+header {
+    background-color: #fff0dd;
+   padding: 100px 100px;
+    text-align: center;
+    border-bottom: 5px solid #b89685;
+    margin-top: 60px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #322a2a;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header hr {
+    width: 80px;
+    height: 4px;
+    background-color: #ffba9f;
+    border: none;
+    margin: 20px auto 0 auto;
+    border-radius: 2px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #322a2a;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #b89685;
+}
+.titulo {
+    background-color:#ffba9f;
+    text-align: center;
+}
+.titulo h2 {
+    display: inline-block;
+    color: #fff0dd;
+    background-color: #b89685;
+    border-radius: 40px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.658);
+}
+
+.contenedor {
+    display: flex;           /* tarjetas lado a lado */
+    flex-wrap: wrap;         /* bajan a la siguiente fila si no caben */
+    justify-content: center; /* centra las tarjetas horizontalmente */
+    gap: 20px;               /* espacio entre tarjetas */
+    background-color: #ffba9f;
+    padding: 20px;
+}
+
+.caja {
+    background-color: #fff0dd;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+}
+
+.caja img {
+    border-radius: 15px;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.caja h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.caja p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #ffba9f;
+    padding: 30px 10px;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #b89685;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}

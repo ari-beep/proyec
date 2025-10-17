@@ -1,0 +1,134 @@
+*{
+     font-family: "Poppins", sans-serif;
+    }
+
+header {
+    background-color: #fff0dd;
+    padding: 100px 100px;
+    text-align: center;
+    border-bottom: 5px solid #b89685;
+    margin-top: 60px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #322a2a;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header hr {
+    width: 80px;
+    height: 4px;
+    background-color: #ffba9f;
+    border: none;
+    margin: 20px auto 0 auto;
+    border-radius: 2px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #322a2a;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #b89685;
+}
+h2{
+    text-align: center;
+    background-color: #b89685;
+    border-radius: 15px;
+    color: #fff0dd;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+form{
+  max-width: 500px;
+  color: #f9f9f9;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #b89685;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 0.6rem;
+  border: 1px solid #fff0dd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 0.8rem;
+  background-color: #be7d63;
+  color: #f9f9f9;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #322a2a;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #ffba9f;
+    padding: 30px 10px;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #b89685;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
